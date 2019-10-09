@@ -1,0 +1,118 @@
+.entire-grid{
+    display: grid;
+    grid-template-columns: 1fr 320px 700px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". header header ."
+    ". sidebar biography ."
+    ". sidebar work-experience ."
+    ". sidebar education ."
+    ". sidebar skills .";
+    grid-gap: 40px;
+    
+}
+
+hr{
+    border:1px solid black;
+}
+
+p{
+    font-family: cursive;
+    font-size: 18px;
+}
+
+#topborder{
+    border: 5px solid aquamarine;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 150px;
+    padding-right: 150px;
+    color: aquamarine;
+    text-align: center;
+
+}
+
+header{
+    grid-area: header;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    
+}
+#biography{
+    grid-area: biography;
+}
+
+#work-experience{
+    grid-area: work-experience;
+}
+
+#education{
+    grid-area: education;
+}
+
+#skills{
+    grid-area: skills;
+}
+
+li{
+    float: left;
+    width: 50%;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+#photo1{
+    align-items: center;
+    padding-top: 10px;
+    text-align: center;
+    display: block;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  #sidebar{
+      grid-area: sidebar;
+      background-color: aquamarine;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fas{
+    font-size: 30px;
+  }
+
