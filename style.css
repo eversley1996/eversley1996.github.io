@@ -47,10 +47,12 @@ header{
 
 #work-experience{
     grid-area: work-experience;
+    float: left;
 }
 
 #education{
     grid-area: education;
+    float: left;
 }
 
 #skills{
